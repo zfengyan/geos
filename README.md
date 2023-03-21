@@ -10,6 +10,8 @@ The feature is amazing yet the tutorial is hard to find.
 I was inspired from the example code given by the original repository, yet I found it a bit old and especially for C++ API. So I will add my testing code, as a heads-up, also 
 hope to help someone, somewhere else.
 
+The GEOS version I am using is: `3.10.0` and the API is C++.
+
 The testing code snipped will be in [examples/My_example](https://github.com/zfengyan/geos/tree/master/examples/My_example).
 
 =============================
