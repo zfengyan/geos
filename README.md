@@ -1,4 +1,20 @@
-BUILDING, TESTING, INSTALLING
+This is the repository forked from:
+
+https://github.com/vmx/geos
+
+I happened to use a feature of GEOS library called "polygonize" - which is, take a set of geometries (such as line strings) as input (can be unordered), and output the polygons - at the same
+time omitting the possibly dangling parts (such as dangling lines, points, etc.).
+
+The feature is amazing yet the tutorial is hard to find.
+
+I was inspired from the example code given by the original repository, yet I found it a bit old and especially for C++ API. So I will add my testing code, as a heads-up, also 
+hope to help someone, somewhere else.
+
+The testing code snipped will be in 
+
+The original information is as follows:
+
+### BUILDING, TESTING, INSTALLING
 =============================
 
 Unix
@@ -93,4 +109,3 @@ DOCUMENTATION
   cd doc; make doxygen-html
 
   http://trac.osgeo.org/geos
-
