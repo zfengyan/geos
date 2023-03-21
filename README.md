@@ -10,7 +10,9 @@ The feature is amazing yet the tutorial is hard to find.
 I was inspired from the example code given by the original repository, yet I found it a bit old and especially for C++ API. So I will add my testing code, as a heads-up, also 
 hope to help someone, somewhere else.
 
-The testing code snipped will be in 
+The testing code snipped will be in [examples/My_example](https://github.com/zfengyan/geos/tree/master/examples/My_example).
+
+=============================
 
 The original information is as follows:
 
