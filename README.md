@@ -14,7 +14,7 @@ The GEOS version I am using is: `3.10.0` and the API is C++.
 
 The testing code snipped will be in [examples/My_example](https://github.com/zfengyan/geos/tree/master/examples/My_example).
 
-Note: Due to the compatibility, you might want to run the code in Release mode, since in Debug mode, the debug may faile becaues
+Note: Due to the compatibility, you might want to run the code in Release mode, since in Debug mode, the debug may fail because
 
 `vector interators incompatible` with `geosd.dll` file.
 
