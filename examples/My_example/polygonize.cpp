@@ -123,6 +123,28 @@ int main()
 	for (unsigned int i = 0; i < polys.size(); i++) {
 		cout << "polygon: " << polys[i]->toString() << '\n';
 		cout << "area: " << polys[i]->getArea() << '\n';
+		
+		// Print the coordinates
+
+		// exterior ring
+		std::unique_ptr<CoordinateSequence> exteriorCoordSeq = polys[i]->getExteriorRing()->getCoordinates();
+		for (std::size_t m = 0; m < exteriorCoordSeq->getSize(); ++m) {
+			const Coordinate& coord = exteriorCoordSeq->getAt(m);
+			std::cout << "(" << coord.x << ", " << coord.y << ")" << std::endl;
+		}
+
+		// interior ring(s)
+		cout << "number of inner rings: " << polys[i]->getNumInteriorRing() << '\n';
+		for (std::size_t m = 0; m < polys[i]->getNumInteriorRing(); ++m) {
+			std::unique_ptr<CoordinateSequence> holeCoordSeq = polys[i]->getInteriorRingN(m)->getCoordinates();
+
+			// Print the coordinates of the i-th hole
+			std::cout << "Hole " << i << ":" << std::endl;
+			for (std::size_t j = 0; j < holeCoordSeq->getSize(); ++j) {
+				const Coordinate& coord = holeCoordSeq->getAt(j);
+				std::cout << "(" << coord.x << ", " << coord.y << ")" << std::endl;
+			}
+		}
 	}
 		
 
